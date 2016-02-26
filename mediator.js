@@ -1,3 +1,5 @@
+//TODO: Get it working
+//TODO: Upgrade to ES6
 function Player(name) {
   this.points = 0;
   this.name = name;
