@@ -1,4 +1,3 @@
-//TODO: add tests and rewrite in es6
 var publisher = {
   subscribers: {
     any: []
@@ -67,10 +66,10 @@ var joe = {
 paper.subscribe(joe.drinkCoffee);
 paper.subscribe(joe.sundayPreNap, 'monthly');
 
-paper.daily();
-paper.daily();
-paper.daily();
-paper.monthly();
+paper.daily();   //=> Just read big news today
+paper.daily();   //=> Just read big news today
+paper.daily();   //=> Just read big news today
+paper.monthly(); //=> Falling asleep reading this interesting analysis
 
 makePublisher(joe);
 joe.tweet = function (msg) {
@@ -83,6 +82,6 @@ paper.readTweets = function (tweet) {
 
 joe.subscribe(paper.readTweets);
 
-joe.tweet('hated the paper today');
+joe.tweet('hated the paper today'); //=> Call big meeting! Someone hated the paper today
 
 //src: http://www.jspatterns.com/book/7/observer.html
