@@ -54,6 +54,14 @@ var paper = {
 
 makePublisher(paper);
 
+export class Person {
+  constructor (name) {
+    this.name = name;
+  }
+}
+
+var joe = new Person('Joe');
+
 var joe = {
   drinkCoffee: function (paper) {
     console.log('Just read ' + paper);
